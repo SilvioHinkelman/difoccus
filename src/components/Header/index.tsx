@@ -5,7 +5,6 @@ import Drawer from "../Drawer";
 import { routes } from "@/constants/mockHeader";
 
 export default function Header() {
-  console.log("TCL: Header -> routes", routes);
   return (
     <DivMaster className="border-b-2 border-[#281c52]">
       <div className="flex gap-8 h-20 items-center justify-between ">
