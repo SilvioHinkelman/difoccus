@@ -1,6 +1,7 @@
 import Link from "next/link";
 import DivMaster from "../MasterDiv";
 import Image from "next/image";
+import Drawer from "../Drawer";
 
 type route = {
   text: string;
@@ -53,12 +54,12 @@ export default function Header() {
           height={30}
           priority
         />
-        <div className="flex gap-2 flex-wrap">
+        <div className="flex gap-4 flex-wrap">
           {routes.map((route) => {
             return (
-              <div key={route.text} className="flex items-center gap-2">
+              <div key={route.text} className="flex items-center gap-4">
                 <Link
-                  className="text-nowrap text-xs relative transform p-2
+                  className="text-nowrap text-xs relative transform
                               transition-all duration-300 rounded-full hover:bg-[#2e3257] hover:scale-110"
                   href={route.route}
                 >
@@ -68,6 +69,7 @@ export default function Header() {
             );
           })}
         </div>
+        <Drawer />
       </div>
     </DivMaster>
   );
