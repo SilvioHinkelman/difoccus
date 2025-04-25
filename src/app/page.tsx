@@ -1,65 +1,54 @@
-import Image from "next/image";
+import MasterDiv from "@/components/MasterDiv";
+import { QuoteDown, QuoteUp } from "iconsax-reactjs";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/big-logo.png"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <div className=" font-[family-name:var(--font-roboto-mono)] flex justify-center  bg-home">
+        <main
+          className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start h-1/3 md:h-fit md:w-1/2 mt-auto md:ml-auto my-auto text-[#131524] 
+        p-6 pr-6 lg:p-0 lg:pr-14"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+          <h1 className="text-[60px] font-black text-center w-ful w-fit max-w-[650px] max-md:bg-[#ffffff5b] rounded-2xl">
+            A Difoccus
+          </h1>
+          <p className="text-lg md:text-xl font-bold bg-[#ffffff5b] md:bg-[#ffffff34] p-3 md:p-6 rounded-2xl max-w-[650px]">
+            A Difoccus Produções é uma empresa especializada na realização de
+            formaturas e eventos. Nosso objetivo é proporcionar aos clientes uma
+            produção de altíssimo nível, oferecendo o que há de melhor no
+            mercado em tecnologias e serviços. Procuramos sempre inovar as
+            fórmulas de edição e captação de imagens mantendo o mercado sempre
+            em crescimento e desenvolvimento. Possuímos como destaque nossa
+            qualidade de vídeo e foto, fator que sempre obtivemos o
+            reconhecimento de nossos clientes. Além disso, a Difoccus procura
+            dar um atendimento personalizado e para isso colocamos nossas
+            equipes à disposição. Sempre estimulamos a participação dos clientes
+            no processo, ouvindo suas opiniões, disponibilizando o material já
+            preparado para aprovação, fornecendo sugestões e opções para que o
+            resultado atinja suas melhores expectativas, aumentando assim ainda
+            mais a emoção do momento registrado.
+          </p>
+        </main>
+      </div>
+      <MasterDiv>
+        <p className="text-white text-3xl font-extrabold text-center w-full mt-14">
+          <QuoteUp
+            size="18"
+            color="#fff"
+            variant="Bold"
+            className="inline-block align-middle mb-5"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          A Difoccus produções faz de tudo para tornar a sua formatura um
+          acontecimento inesquecível, aliando equipamentos de alta qualidade à
+          uma equipe qualificada e criativa!
+          <QuoteDown
+            size="18"
+            color="#fff"
+            variant="Bold"
+            className="inline-block align-middle mb-5 ml-1"
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </p>
+      </MasterDiv>
     </div>
   );
 }
