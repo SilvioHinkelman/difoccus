@@ -13,7 +13,7 @@ export default function Footer() {
     }`;
   };
   return (
-    <footer>
+    <footer className="flex justify-center bg-black mt-8">
       <Image
         loader={imageLoaders}
         src="me.png"

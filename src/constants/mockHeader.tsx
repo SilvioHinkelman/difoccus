@@ -14,11 +14,11 @@ export const routes: route[] = [
   },
   {
     text: "SERVIÇOS",
-    route: "/",
+    route: "/servicos",
   },
   {
     text: "MÍDIAS",
-    route: "/",
+    route: "/midias",
   },
   {
     text: "PROTAL DO FORMANADO",

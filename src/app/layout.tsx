@@ -29,9 +29,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${roboto.variable} antialiased`}
         cz-shortcut-listen="true"
       >
-        <Header />
-        {children}
-        <Footer />
+        <div className="flex-1 flex flex-col min-h-dvh">
+          <Header />
+          <div className="flex-1">{children}</div>
+          <Footer />
+        </div>
       </body>
     </html>
   );
