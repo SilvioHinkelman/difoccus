@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Roboto_Condensed } from "next/font/google";
-import "./globals.css";
 import { Footer, Header } from "@/components";
+import "./globals.css";
+import 'swiper/css';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
