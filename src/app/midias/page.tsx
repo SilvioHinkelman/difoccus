@@ -20,10 +20,10 @@ const Players: React.FC = () => {
       },
     },
     centeredSlides: true,
-    /*   autoplay: {
+      autoplay: {
           delay: 2500,
           disableOnInteraction: false,
-        }, */
+        },
     modules: [EffectCreative, Autoplay],
     loop: true,
     speed: 1000,
