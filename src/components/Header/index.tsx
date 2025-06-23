@@ -6,7 +6,7 @@ import { routes } from "@/constants/mockHeader";
 
 export default function Header() {
   return (
-    <DivMaster className="border-b-2 border-[#281c52]">
+    <DivMaster className="border-b-2 border-[#12024e]">
       <div className="flex gap-8 h-20 items-center justify-between ">
         <Image
           src="/big-logo.png"
@@ -21,8 +21,8 @@ export default function Header() {
             return (
               <div key={route.text} className="flex items-center gap-4">
                 <Link
-                  className="text-nowrap text-xs relative transform text-[#0bac20]
-                              transition-all duration-300 rounded-full hover:scale-110 hover:text-[#79d483] 
+                  className="text-nowrap text-xs relative transform text-[#5a5a5a]
+                              transition-all duration-300 rounded-full hover:scale-110 hover:text-[#363636] 
                               hidden lg:block"
                   href={route.route}
                 >

@@ -12,8 +12,9 @@ export default function Footer() {
       quality || 75
     }`;
   };
+
   return (
-    <footer className="flex justify-center bg-black mt-8">
+    <footer className="flex justify-center bg-blue-600 t-8">
       <Image
         loader={imageLoaders}
         src="me.png"

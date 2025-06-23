@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Roboto_Condensed } from "next/font/google";
 import { Footer, Header } from "@/components";
 import "./globals.css";
-import 'swiper/css';
+import "swiper/css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,12 +27,12 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${geistSans.variable} ${roboto.variable} antialiased`}
+        className={`${roboto.variable} ${geistSans.variable} font-sans antialiased`}
         cz-shortcut-listen="true"
       >
         <div className="flex-1 flex flex-col min-h-dvh">
           <Header />
-          <div className="flex-1">{children}</div>
+          {children}
           <Footer />
         </div>
       </body>
